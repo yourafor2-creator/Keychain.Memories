@@ -1,0 +1,246 @@
+/* 1. Pengaturan umum */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Poppins", Arial, sans-serif;
+  color: #4A3B32;
+  line-height: 1.6;
+  background-color: #F5E9CF; /* Vanilla Cream */
+}
+
+/* 2. Header dan menu */
+header {
+  background-color: #D96C81; /* Blush Rose */
+  color: #FFFFFF;
+  text-align: center;
+  padding: 36px 16px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 36px;
+  color: #FFFFFF;
+}
+
+header p {
+  margin: 8px 0 0;
+  color: #F5E9CF; /* Vanilla Cream */
+}
+
+nav {
+  margin-top: 20px;
+}
+
+nav a {
+  color: #FFFFFF;
+  text-decoration: none;
+  font-weight: 600;
+  margin: 0 12px;
+  padding: 6px 14px;
+  border-radius: 20px;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+nav a:hover {
+  background-color: #F4AF30; /* Sunflower Gold */
+  color: #4A3B32;
+}
+
+/* 3. Isi halaman */
+main {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+section {
+  background-color: #FFFFFF;
+  border: 2px solid #F4AF30; /* Sunflower Gold */
+  border-radius: 14px;
+  padding: 28px;
+  margin: 24px 0;
+  box-shadow: 0 4px 10px rgba(217, 108, 129, 0.12);
+}
+
+h2 {
+  color: #D96C81; /* Blush Rose */
+  border-bottom: 3px solid #F4AF30; /* Sunflower Gold */
+  padding-bottom: 8px;
+  margin-top: 0;
+}
+
+h3 {
+  color: #D96C81; /* Blush Rose */
+  margin-top: 24px;
+}
+
+/* 4. Foto Store (Bagian Tentang) */
+.foto-store {
+  margin: 20px auto;
+  max-width: 480px;
+  text-align: center;
+  background-color: #F5E9CF; /* Vanilla Cream */
+  padding: 12px;
+  border: 1px solid #F4AF30; /* Sunflower Gold */
+  border-radius: 12px;
+}
+
+.foto-store img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  display: block;
+}
+
+.foto-store figcaption {
+  margin-top: 8px;
+  font-size: 13px;
+  color: #4A3B32;
+  font-weight: 600;
+}
+
+/* 5. Tabel Harga */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 24px;
+}
+
+th, td {
+  border: 1px solid #F4AF30; /* Sunflower Gold */
+  padding: 12px;
+  text-align: left;
+}
+
+th {
+  background-color: #F4AF30; /* Sunflower Gold */
+  color: #4A3B32;
+  font-weight: 600;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #F5E9CF; /* Vanilla Cream */
+}
+
+/* 6. Galeri Grid Kartu Produk */
+.galeri-produk {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  margin-top: 16px;
+}
+
+.kartu-produk {
+  margin: 0;
+  background-color: #F5E9CF; /* Vanilla Cream */
+  border: 2px solid #F4AF30; /* Sunflower Gold */
+  border-radius: 12px;
+  overflow: hidden;
+  text-align: center;
+  box-shadow: 0 3px 8px rgba(217, 108, 129, 0.15);
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.kartu-produk:hover {
+  transform: translateY(-4px);
+  border-color: #D96C81; /* Blush Rose */
+}
+
+.kartu-produk img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+}
+
+.kartu-produk figcaption {
+  padding: 12px 10px;
+  font-weight: 600;
+  font-size: 14px;
+  color: #FFFFFF;
+  background-color: #D96C81; /* Blush Rose */
+}
+
+/* 7. Form & Tombol */
+form {
+  margin-top: 20px;
+  margin-bottom: 32px;
+}
+
+label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #D96C81; /* Blush Rose */
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #F4AF30; /* Sunflower Gold */
+  background-color: #F5E9CF; /* Vanilla Cream */
+  border-radius: 8px;
+  font-family: inherit;
+  color: #4A3B32;
+  margin-bottom: 16px;
+}
+
+input:focus, textarea:focus {
+  outline: none;
+  border-color: #D96C81; /* Blush Rose */
+  background-color: #FFFFFF;
+}
+
+button {
+  background-color: #D96C81; /* Blush Rose */
+  color: #FFFFFF;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 28px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+button:hover {
+  background-color: #F4AF30; /* Sunflower Gold */
+  color: #4A3B32;
+}
+
+.tombol-wa {
+  display: inline-block;
+  background-color: #F4AF30; /* Sunflower Gold */
+  color: #4A3B32;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 12px 24px;
+  border-radius: 30px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.tombol-wa:hover {
+  background-color: #D96C81; /* Blush Rose */
+  color: #FFFFFF;
+}
+
+/* 8. Peta Responsif */
+.peta-container iframe {
+  width: 100%;
+  height: 350px;
+  border: 2px solid #F4AF30; /* Sunflower Gold */
+  border-radius: 12px;
+}
+
+/* 9. Footer */
+footer {
+  background-color: #D96C81; /* Blush Rose */
+  color: #F5E9CF; /* Vanilla Cream */
+  text-align: center;
+  padding: 20px 16px;
+  font-size: 14px;
+  margin-top: 40px;
+}
